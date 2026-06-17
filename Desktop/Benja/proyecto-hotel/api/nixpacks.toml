@@ -1,0 +1,9 @@
+[providers]
+providers = ["node"]
+
+[phases.install]
+dependsOn = ["setup"]
+cmds = ["npm install --prefix api"]
+
+[start]
+cmd = "node api/index.js"
